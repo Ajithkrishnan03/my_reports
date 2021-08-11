@@ -1,7 +1,7 @@
 from odoo import models, fields
 from odoo import api, tools
 
-#Class file
+#Class
 class PayAmount(models.Model):
 	_name ='pay.amount'
 	_auto = False
