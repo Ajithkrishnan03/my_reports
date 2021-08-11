@@ -36,7 +36,7 @@ class PayAmount(models.Model):
 			stock_move as sm ON sm.sale_line_id = sol.id
 		LEFT JOIN
 			x_account_move_stock_picking_rel as xam ON xam.stock_picking_id = sm.picking_id
-	    LEFT JOIN
+	    	LEFT JOIN
 			account_move as am ON am.id = xam.account_move_id
 		LEFT JOIN
 			account_move_line as aml ON aml.move_id = am.id AND sol.product_id = aml.product_id
