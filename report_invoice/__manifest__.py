@@ -1,0 +1,18 @@
+{
+    'name': 'pay_module',
+    'version': '1.0',
+    'category': 'Extra Tools',
+    'summary': ' Module for invoice module',
+    'sequance':'2',
+    'author': 'odoomates',
+    'maintainer': 'logan',
+    'website': 'logan.com',
+    'depends': ['base','sale'],
+    'demo':[],
+    'data':['security/ir.model.access.csv',
+    'invoice.xml',
+],
+    'installable': True,
+    'application': True,
+    'auto_install': False,
+}
